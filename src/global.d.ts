@@ -1,4 +1,8 @@
 interface Window {
-    SpeechRecognition: any;
-    webkitSpeechRecognition: any;
-  }
+  webkitSpeechRecognition: any;
+  SpeechRecognition: any;
+}
+
+declare namespace NodeJS {
+  interface Timeout {}
+}

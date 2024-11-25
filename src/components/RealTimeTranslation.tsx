@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 
+// In RealTimeTranslation.tsx
 interface TranslationProps {
   text: string;
+  targetLanguage: string; // Add this
   onTranslated: (translatedText: string) => void;
 }
 

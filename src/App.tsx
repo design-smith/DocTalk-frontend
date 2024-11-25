@@ -24,12 +24,12 @@ export default function DocTalk() {
   const [currentText, setCurrentText] = React.useState('')
   const [isRecording, setIsRecording] = React.useState(false)
   const [targetLanguage, setTargetLanguage] = React.useState('es')
-  const [audioData, setAudioData] = React.useState<number[]>([])
+  //const [audioData, setAudioData] = React.useState<number[]>([])
 
-  const handleTranscript = (transcript: string, audioFrequencyData: number[]) => {
+  const handleTranscript = (transcript: string) => {
     if (transcript.trim()) {
       setCurrentText(transcript)
-      setAudioData(audioFrequencyData)
+      //setAudioData(audioFrequencyData)
       setIsRecording(true)
       addMessage(transcript, '')
     }
