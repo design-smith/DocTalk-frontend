@@ -1,0 +1,26 @@
+.auto-scroll-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;  /* Adjust this value to control the fade height */
+  background: transparent
+}
+
+.scroll-content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-content::-webkit-scrollbar {
+  display: none;
+}

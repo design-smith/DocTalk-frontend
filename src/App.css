@@ -1,0 +1,96 @@
+.main {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f5f9ff 0%, #e8f1ff 100%);
+}
+
+.screen {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 45% 5% 45%;
+  gap: 20px;
+  overflow: hidden;
+  padding: 2%;
+}
+
+.column {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.column2 {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.docNotes {
+  background-color: #1976d2 !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 8px !important;
+}
+
+.clear {
+  background-color: #dc3545 !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 8px !important;
+}
+
+.language {
+  background-color: #6200ee !important;
+  color: white !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 8px !important;
+  min-width: 150px !important;
+}
+
+.scroll-area {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Hide scrollbars but keep functionality */
+.scroll-area::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Custom styles for Select dropdown */
+.MuiSelect-select {
+  color: white !important;
+}
+
+.MuiSelect-icon {
+  color: white !important;
+}
