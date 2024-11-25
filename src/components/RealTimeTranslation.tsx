@@ -31,7 +31,8 @@ const RealTimeTranslation: React.FC<TranslationProps> = ({ text, onTranslated })
         return;
       }
 
-      ws.current = new WebSocket('ws://localhost:8000/ws/translate');
+      // Change from localhost to your Render URL
+      ws.current = new WebSocket('wss://your-render-app.onrender.com/ws/translate');
 
       ws.current.onopen = () => {
         setIsConnected(true);
